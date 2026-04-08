@@ -23,7 +23,7 @@ public class DataLoader implements CommandLineRunner {
         invoiceRepository.deleteAll();
         clientRepository.deleteAll();
 
-        // ========== CREAR CLIENTES ==========
+        // CREAR CLIENTES
 
         // Cliente 1 - Con DUI
         Client client1 = Client.builder()
@@ -65,7 +65,7 @@ public class DataLoader implements CommandLineRunner {
                 .build();
         clientRepository.save(client5);
 
-        // ========== CREAR FACTURAS ==========
+        //CREAR FACTURAS
 
         // Facturas para Cliente 1 (Ana Martínez)
         Invoice invoice1 = Invoice.builder()
